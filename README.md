@@ -19,4 +19,4 @@ Other commands (optional):
 -     --epochs: set epoch value of model    
 -     --help: pull up this menu    
 # credits
-- eshaan desh
+- eshaan
