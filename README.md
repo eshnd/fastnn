@@ -10,7 +10,7 @@ Quickly access a prediction neural network model
 # to use
 To input data:    
 -     --file: select file to parse for data    
--     OR    
+OR    
 -     --series: provide series of data as next parameter    
 Other commands (optional):    
 -     --separator: choose symbol that each datapoint is separated with    
