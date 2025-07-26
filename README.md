@@ -2,7 +2,7 @@
 Quickly access a prediction neural network model
 # install
 - on arch: ```yay -S fastnn```
-- on others: ```git clone https://github.com/eshnd/fastnn; cd fastnn; chmod +x fastnn.py; sudo mv fastnn.py /usr/bin/fastnn```
+- on others: ```git clone https://github.com/eshnd/fastnn; cd fastnn; chmod +x fastnn.py; sudo mv fastnn.py /usr/bin/fastnn; cd ..; rm -rf fastnn```
 # why?
 - Coming up with numbers that need to follow a pattern
 - Needing to analyze a large set of numbers without building an entire script
