@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 
-# syntax should be
-# fastnn --file nums.txt --separator ";" (model here is default mlp)
-# fastnn --series 5,6,4,5.6,6,4 --model transformer
-# ADD --HELP FUNCTION
-
 import sys
 import torch
 import torch.nn as nn
@@ -39,6 +34,20 @@ try:
             
             case "--epochs" | "-e":
                 epochs = sys.argv[i + 1]
+            
+            case "--help" | "-h":
+                print("""FastNN: A tool to quickly use prediction networks
+To input data:
+    --file: select file to parse for data
+    OR
+    --series: provide series of data as next parameter
+Other commands (optional):
+    --separator: choose symbol that each datapoint is separated with
+    --model: either "MLP", "LSTM", "CNN", or "Transformer"
+    --window-size: set window size of model
+    --epochs: set epoch value of model
+    --help: pull up this menu""")
+                sys.exit()
 
     if using_file:
         with open(file, "r") as f:
