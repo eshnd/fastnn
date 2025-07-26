@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import sys
-sys.path.insert(0, "/usr/lib/fastnn")
 import torch
 import torch.nn as nn
 import torch.optim as optim
